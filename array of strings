@@ -1,0 +1,15 @@
+//Array of strings
+#include <stdio.h>
+#include <string.h>
+void main(){
+    char a[5][10];
+    int n=0;
+    printf("Enter no of names : ");
+    scanf("%d",&n);
+    printf("Enter all the names in the array :");
+    for(int i=0;i<n;i++)
+        scanf("%s",a[i]);
+    printf("The Legned are : \n");
+    for(int i=0;i<n;i++)
+        printf(" No. %d is %s\n",i+1,a[i]);
+}
