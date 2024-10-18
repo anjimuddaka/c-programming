@@ -1,0 +1,25 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+   int a,b;
+   char op;
+   printf("Enter a and b :");
+   scanf(" %d %d",&a,&b);
+   printf("Enter a symbol:");
+//space infront of %c as ' ' is also a charcoa in ASCII
+   scanf(" %c",&op);
+   switch(op){
+       case '+': printf("The sum is %d",a+b");
+                 break;
+       case '-': printf("The sub is %d",a-b");
+                 break;
+       case '*': printf("The mul is %d",a*b");
+                 break;
+       case '/': printf("The div is %d",a/b");
+                 break;
+       case '%': printf("The mdiv is %d",a%b");
+                 break;
+       default : printf("wrong input");
+   }
+}
