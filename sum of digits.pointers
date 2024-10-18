@@ -1,0 +1,18 @@
+#include <stdio.h>
+int sumofDigits(int n);
+int sumofDigits(int n){
+    int result=0;
+    if(n==0){
+        result=0;
+        return result;
+    }
+    result=n%10;
+    return result+sumofDigits(n/10);
+}
+int main() {
+   int n;
+   printf("Enter number : ");
+   scanf("%d",&n);
+   printf("%d",sumofDigits(n));
+    return 0;
+}
