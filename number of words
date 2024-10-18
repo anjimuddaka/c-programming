@@ -1,0 +1,13 @@
+//NUmber of words
+#include <stdio.h>
+#include <string.h>
+void main(){
+     char a[100];
+     int count=0;
+     printf("Enter Pragraph : ");
+     gets(a);
+     for(int i=0;i<strlen(a);i++)
+        if(a[i]==' ' && a[i+1]!=' ')
+            count+=1;
+    printf("Total words are %d",count+1);
+}
