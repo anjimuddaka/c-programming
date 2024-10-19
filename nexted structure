@@ -1,0 +1,48 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include<stdio.h>
+struct marks
+{
+    int mark1;
+    int mark2;
+    int mark3; 
+    //struct details;
+};
+struct details
+{
+    char name[10];
+    int regno;
+    struct marks
+}p[2];
+int main() 
+{
+   int i;
+   struct details p[2];
+    for(int i=0;i<2;i++)
+    {
+        printf("enter the name\n");
+        scanf("%s",&details.p[i].name);
+        printf("enter the regno\n");
+        scanf("%d",&details. p[i].regno);
+        printf("enter the mark%d",i+1);
+        scanf("%d",&details. p[i].marks. mark1);
+        printf("enter the mark%d",i+2);
+        scanf("%d",&details. p[i].marks. mark2);
+        printf("enter the mark%d",i+3);
+        scanf("%d",&details. p[i].marks. mark3);
+    }
+    for(int i=0;i<2;i++)
+    {
+        printf("%s",details. p[i].name);
+        printf("%d",details. p[i].regno);
+        printf("%d",details. p[i].mark. mark1);
+        printf("%d",details. p[i].mark. mark2);
+        printf("%d",details. p[i].mars. mark3);   
+    }
+    return 0;
+}
