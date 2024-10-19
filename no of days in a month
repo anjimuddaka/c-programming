@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    int y,m,count=0;
+    printf("Enter year and month : ");
+    scanf("%d %d",&y,&m);
+    if(m==1||m==3||m==5||m==7||m==8||m==10||m==12)
+        printf("The given month in %d year has 31 days ",y);
+    else{
+        if(m==2 && ((y%4==0 && y%100!=0)||(y%100==0 && y%400==0)))
+        {
+            printf("The given month in  year has 29 days ",y);
+            count=1;
+        }
+        else
+        {
+            printf("The given month in  year has 28 days ",y);
+            count=1;
+        }
+        if(count==0)
+            printf("The given month in  year has 30 days ",y);
+    }
+}
